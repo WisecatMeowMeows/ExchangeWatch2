@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>XchgWatch2</title>
+<link rel="stylesheet" type="text/css" href="ExchangeWatch.css">
+</head>
+
+<body>
+
+
+
+
+<TABLE id="WatchTable">
+   <TR>
+	   <TH>Name</TH>
+	   <TH>Last Trade Price</TH>
+   </TR>
+   <TR>
+      <TD id="BitcoinExchange0">OKCoin</TD>
+      <TD id="Price0">NODATA</TD>
+      <TD> <button id="btnToggle0" onclick=doToggle(0)>Activate</button> </TD>
+      
+   </TD>
+   </TR>
+   <TR>
+      <TD id="BitcoinExchange1">GDAX</TD>
+      <TD id="Price1">NODATA</TD>
+	  <TD> <button id="btnToggle1" onclick=doToggle(1)>Activate</button> </TD>
+   </TR>
+   <TR>
+      <TD id="BitcoinExchange2">OKCoin2</TD>
+      <TD id="Price2">NODATA</TD>
+	  <TD> <button id="btnToggle2" onclick=doToggle(2)>Activate</button> </TD>
+   </TR>
+</TABLE>
+
+
+   <button id="openButton" onclick=doOpen()>Open Websocket</button>
+   <button id="btnStartStream" onclick=startStream(0)>Start Live Stream!</button>
+   <button id="closeButton" onclick=doClose()>CloseWebsocket</button>
+<p id=output>Output will appear here</p>
+
+</body>
+
+<script language="javascript" type="text/javascript" src="ExchangeWatch.js"></script>
